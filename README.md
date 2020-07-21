@@ -40,6 +40,7 @@ Visualization of hidden clusters in data in lower dimension <br />
 Using expression of all 20K genes as inputs to the model and cancer types as outputs <br />
 Confusion matrix of the test set (30% of the data) <br />
 Accuracy: ttaining 100% testing > 96%<br />
+misclassifications of the model are primarily within the same organ systems, e.g. colon(COAD) and rectal (READ) <br />
 
 <img src="confusion_matix.png" width="900"/>
 
