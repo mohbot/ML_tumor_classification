@@ -38,6 +38,7 @@ Visualization of hidden clusters in data in lower dimension <br />
 
 ### Classification and dimentionality reduction by XGBoost modeling
 Using expression of all 20K genes as inputs to the model and cancer types as outputs <br />
+Confusion matrix of the test set (30% of the data) <br />
 
 <img src="confusion_matix.png" width="900"/>
 
