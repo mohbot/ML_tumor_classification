@@ -49,11 +49,11 @@ Using features with non-zero importance coefficients for further dimensioality r
 Only using expression of 200 genes can result more than 95% accuracy in cancer type prediction <br />
 Plotting confusion matrix to show the performance of our model
 
-<img src="Figuresfeature_reduction.png" width="600"/>
+<img src="Figures/feature_reduction.png" width="600"/>
 
 ### Hierarchically-clustering, and visualizing the result using a heatmap on reduced gene set
 Vertical bar shows the classification power of the model and clusters in heatmap shows possible biological mechanisms for different cancer types <br />
 
 <img src="Figures/disease_heatpap.png" width="600"/>
 
-<img src="Figurescancer_types_abbrev.png" width="500"/>
+<img src="Figures/cancer_types_abbrev.png" width="500"/>
