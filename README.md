@@ -29,12 +29,12 @@ Label the samples by clinical data and keeping cancer types with at least 30 sam
 ### Applying PCA dimensionality reduction before clustering
 Since t-SNE is computationaly expensive we use PCA and keep subset of PCs (1000) instead of all 20K genes that preserve majority of variation in data  <br />
 
-<img src="tpm_pcs_cumSum_1000.png" width="600"/>
+<img src="Figures/tpm_pcs_cumSum_1000.png" width="600"/>
 
 ### Applying t-SNE for clustering and visualization
 Visualization of hidden clusters in data in lower dimension <br />
 
-<img src="tpm_pcs_tsneWithScl_1000_50_2000.png" width="600"/>
+<img src="Figures/tpm_pcs_tsneWithScl_1000_50_2000.png" width="600"/>
 
 ### Classification and dimentionality reduction by [XGBoost](https://xgboost.readthedocs.io/en/latest/) modeling
 Using expression of all 20K genes as inputs to the model and cancer types as outputs <br />
@@ -42,18 +42,18 @@ Confusion matrix of the test set (30% of the data) <br />
 Accuracy: ttaining 100% testing > 96%<br />
 misclassifications of the model are primarily within the same organ systems, e.g. colon(COAD) and rectal (READ) <br />
 
-<img src="confusion_matix.png" width="900"/>
+<img src="Figures/confusion_matix.png" width="900"/>
 
 ### More dimensionality reduction to explore possible biomarker
 Using features with non-zero importance coefficients for further dimensioality reduction <br />
 Only using expression of 200 genes can result more than 95% accuracy in cancer type prediction <br />
 Plotting confusion matrix to show the performance of our model
 
-<img src="feature_reduction.png" width="600"/>
+<img src="Figuresfeature_reduction.png" width="600"/>
 
 ### Hierarchically-clustering, and visualizing the result using a heatmap on reduced gene set
 Vertical bar shows the classification power of the model and clusters in heatmap shows possible biological mechanisms for different cancer types <br />
 
-<img src="disease_heatpap.png" width="600"/>
+<img src="Figures/disease_heatpap.png" width="600"/>
 
-<img src="cancer_types_abbrev.png" width="500"/>
+<img src="Figurescancer_types_abbrev.png" width="500"/>
